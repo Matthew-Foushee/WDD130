@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* 
+--font-family: "Titillium Web", sans-serif;
+--paragraph-font: Lato, Helvetica, sans-serif;
+ */
+
 #content{
     max-width: 1600px; 
     margin: 0 auto;
@@ -9,12 +17,15 @@
 }
 
 body{
-    background-color: #fcfbfb;
+    background-color: #fcfbfb; 
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: 22px;
     margin: 0;
     padding: 0;
 }
 
 header{
+    font-family: "Titillium Web", Arial, sans-serif;
     background-color: #a81717; 
 }
 nav a:hover{
@@ -29,9 +40,7 @@ nav a:hover{
     background-color: #2117a841;
     color: #a3d9c0;
     text-decoration: none;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
+    font-size: 18px;
 }
 .book:hover, .join:hover{
     background-color: #a817a1;
@@ -39,7 +48,7 @@ nav a:hover{
 }
 .home-title{
     color: #d9a3b0;
-    margin-top: 10px;
+    font-size: 2em;
 }
 
 h4{
@@ -49,20 +58,10 @@ h4{
 h2{
     margin: 0;
 }
-.rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
-}
-.card-img{
-    border: 10px solid black;
-}
 
 .msg{
     background-color: #75a817;
-    padding: 35px;
-}
-
-#logo_link{
-    padding-top: 5px;
+    line-height: 1.5em
 }
 
 .msg h2{
@@ -71,7 +70,7 @@ h2{
 
 .msg p{
     color: #297c6e;
-    padding-bottom: 15px;
+    font-size: .8em;
 }
 
 footer{
