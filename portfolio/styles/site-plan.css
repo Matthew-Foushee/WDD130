@@ -32,6 +32,9 @@ Fonts are separated by a | */
     width: 50%;
 }
 
+#HomePage, h1, h3{
+  font-size: small;
+}
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
