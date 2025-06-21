@@ -127,6 +127,13 @@ footer{
     align-items: center;
 }
 
+.page2-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 footer a{
     color: #4b3350;
     text-decoration: none;
@@ -165,6 +172,43 @@ main section img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.25fr 1fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
+    column-gap: 50px;
+}
+
+.page2-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+#rates{
+    margin-top: 100px;
+    width: 98%;
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    grid-column: 1/2;
+    background-color: #ecf0f1;
+}
+
+.rate-row{
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #e9ebec;
+    border-radius: 5px;
+}
+
+#dates{
+    margin-top: 75px;
+    width: 98%;
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    grid-column: 2/3;
+    background-color: #ecf0f1;
 }
 
 .card-img, .mountains{
@@ -176,6 +220,7 @@ main section img{
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
 }
+
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
