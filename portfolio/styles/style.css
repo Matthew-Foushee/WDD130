@@ -4,7 +4,7 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #2b312a;
+  --primary-color: #485247;
   --secondary-color: #667564;
   --accent1-color: #f5eb68;
   --accent2-color: rgb(114, 5, 114);
@@ -20,7 +20,7 @@
   --paragraph-color-on-color: white; /* paragraph text on a colored background */
   --paragraph-background-color: #396e94;
   --nav-link-color: #396e94;
-  --nav-background-color: #d4ac0d;
+  --nav-background-color: #272003f8;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396e94;
 }
@@ -41,29 +41,51 @@ header #main_logo {
 
 header {
   font-family: "Titillium Web", Arial, sans-serif;
-  background-color: #a81717;
+  background-color: var(--primary-color);
   margin: 0px 0px;
   padding: 0px 0px;
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-template-columns: 120px auto;
   column-gap: 10px;
 }
 
 header #main_logo {
   grid-column: 1/2;
+  padding: 5px 0;
+  justify-self: center;
 }
 
 header nav {
   grid-column: 2/3;
   text-align: center;
   place-self: center;
-  border: 2px solid black;
+  border: 2px solid var(--secondary-color);
   width: 100%;
   margin-right: 10px;
 }
 
+nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+  font-weight: 50;
+}
+
+nav h1{
+  font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 150%;
+}
+
+nav a{
+  color: var(--nav-link-color);
+}
+
 main {
-  background-color: #f5eb68;
+  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 20px 0px;
 }
 
 main .page-title {
@@ -77,6 +99,7 @@ main .page-title h1 {
 main img {
   padding-left: 10px;
   align-self: center;
+  justify-self: center;
 }
 
 main #main-content {
@@ -127,7 +150,7 @@ main #project_information #project_image {
 }
 
 footer {
-  background-color: #17a3a8;
+  background-color: var(--primary-color);
   display: grid;
   margin: 0px 0px;
   padding: 0px 0px;
