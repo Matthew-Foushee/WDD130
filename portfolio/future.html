@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" >
     <title>Personal Portfolio</title>
-    <link type="text/css" rel="stylesheet" href="styles/style.css" />
-    
+    <link type="text/css" rel="stylesheet" href="styles/style.css" >
+    <script src="scripts/index.js"></script>
   </head>
 
   <body>
@@ -16,45 +16,88 @@
           alt="Personal Port Logo"
           width="100"
           height="100"
-        />
+        >
       </a>
       <nav>
         <a href="past.html">Past</a>
         <a href="index.html">Home</a>
-        <a href="future.html"><h1>Future</h1></a>
+        <a
+          href="future.html"
+          style="
+            font-size: 2em;
+            font-weight: bold;
+            line-height: 1.2;
+            margin: 0;
+            display: inline-block;
+          "
+          >Future</a
+        >
       </nav>
     </header>
-    <main>
-      <div class="page-title">
-        <h1>FUTURE</h1>
-      </div>
+    <main class="presentation">
       <div id="selection-bar">
         <div class="selector">
-          <button type="button">Selection 1</button>
-          <button type="button">Selection 2</button>
-          <button type="button">Selection 3</button>
+          <button type="button" onclick="setSlide(1)">Selection 1</button>
+          <button type="button" onclick="setSlide(2)">Selection 2</button>
+          <button type="button" onclick="setSlide(3)">Selection 3</button>
         </div>
       </div>
-      <div id="project_information">
-        <div id="project_text">
-          <h1>Information</h1>
-        </div>
-        <div id="project_image">
-          <img src="images/notfound.png" alt="Image not Found" width="100px" />
-        </div>
+      <div class="project_text first">
+        <h1>Clever Engine</h1>
+        <h3>
+          This project has been in the works for a long time. Most of my earlier graphics projects were stepping stones, 
+          each designed to explore a specific concept, feature, technique, or library needed for this one. The goal is to 
+          build a custom game engine. While it's well-rounded in design, the engine focuses solely on rendering and simulating 
+          the physical and magical systems of a world. The Image is a logo I am thinking about but is currently just AI generated.
+        </h3>
+      </div>
+      <div class="project_image first">
+        <img
+          src="images/clever_engine.png"
+          alt="Image not Found"
+          width="100px"
+        >
+      </div>
+
+      <div class="project_text">
+        <h1>Spell Designer</h1>
+        <h3>
+          This is again for the Clever Engine. It is a tool to design spells for the game.
+          It allows you to create spells with different effects and properties. This system should allow for any "spell" to be created. 
+          The designer is basically a progamming language that will be implemented into the "Big game" later in a 3d and hands on way. The Image is AI Generated
+        </h3>
+      </div>
+      <div class="project_image">
+        <img src="images/Block_Coding.png" alt="Image not Found" width="100px" >
+      </div>
+
+      <div class="project_text">
+        <h1>Garage Inventory System</h1>
+        <h3>
+          I’d like to design and develop a program to help manage and track the contents of my garage. 
+          The system would use a barcode scanner to check items in and out, streamlining organization and inventory control. 
+          Tools, extension cords, bits, attachments, and similar items would be tracked with exact quantities, ensuring I 
+          always know what I have and what’s missing. Consumable materials, like screws or nails, would be scanned out by the 
+          pack and tracked as either unopened or opened, providing a practical level of detail without the need for exact counts. 
+          This system could also be used in the Pantry
+          This image is also AI generated.
+        </h3>
+      </div>
+      <div class="project_image">
+        <img src="images/Garage_management.png" alt="Image not Found" width="100px" >
       </div>
     </main>
     <footer>
       <a href="site-plan.html">
         <img src="images/blueprint.jpeg" alt="siteplan blueprint" width="75px"
-      /></a>
+      ></a>
 
       <div class="social">
         <a href="https://facebook.com">
-          <img src="images/facebook.png" alt="fb icon" />
+          <img src="images/facebook.png" alt="fb icon" >
         </a>
         <a href="https://instagram.com">
-          <img src="images/instagram.png" alt="instagram icon" />
+          <img src="images/instagram.png" alt="instagram icon" >
         </a>
       </div>
     </footer>
